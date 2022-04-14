@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1144</width>
+    <height>753</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background:rgb(243, 244, 247);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="4,16">
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(30, 34, 45);</string>
+        </property>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>30</y>
+           <width>201</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:rgb(255, 255, 255)</string>
+         </property>
+         <property name="text">
+          <string>   考勤后台管理</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_insert_info_2">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>140</y>
+           <width>161</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLabel{
+color:rgb(163, 198, 191);
+}
+
+QLabel:hover{
+color:rgb(255, 255, 255);
+background:rgb(0, 110, 255);
+}</string>
+         </property>
+         <property name="text">
+          <string>   . 信息录入</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(218, 223, 233);</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout" stretch="3,2">
+            <item>
+             <widget class="QWidget" name="widget_2" native="true">
+              <property name="styleSheet">
+               <string notr="true">border-color: rgb(0, 0, 0);</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="0" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,1">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_camera">
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 246, 242);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_4" native="true">
+                   <widget class="QPushButton" name="btn_capture">
+                    <property name="geometry">
+                     <rect>
+                      <x>10</x>
+                      <y>10</y>
+                      <width>121</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color:rgb(8, 7, 5);
+background-color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>拍照</string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_count">
+                    <property name="geometry">
+                     <rect>
+                      <x>170</x>
+                      <y>10</y>
+                      <width>72</width>
+                      <height>51</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>25</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string> 0 </string>
+                    </property>
+                   </widget>
+                   <widget class="QLabel" name="label_photo">
+                    <property name="geometry">
+                     <rect>
+                      <x>10</x>
+                      <y>120</y>
+                      <width>261</width>
+                      <height>201</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(30, 34, 45);</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(216, 216, 216);
+color: rgb(0, 0, 0);</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <widget class="QWidget" name="widget_6" native="true">
+                   <layout class="QGridLayout" name="gridLayout_5">
+                    <item row="0" column="0">
+                     <layout class="QHBoxLayout" name="horizontalLayout_4">
+                      <item>
+                       <widget class="QWidget" name="widget_5" native="true">
+                        <widget class="QLineEdit" name="lineEdit_employee_id">
+                         <property name="geometry">
+                          <rect>
+                           <x>120</x>
+                           <y>10</y>
+                           <width>142</width>
+                           <height>23</height>
+                          </rect>
+                         </property>
+                        </widget>
+                        <widget class="QLabel" name="label">
+                         <property name="geometry">
+                          <rect>
+                           <x>11</x>
+                           <y>11</y>
+                           <width>60</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>员工编号</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="lineEdit_department_id">
+                         <property name="geometry">
+                          <rect>
+                           <x>120</x>
+                           <y>40</y>
+                           <width>142</width>
+                           <height>23</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                        <widget class="QLabel" name="label_4">
+                         <property name="geometry">
+                          <rect>
+                           <x>11</x>
+                           <y>41</y>
+                           <width>60</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>部门编号</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="lineEdit_position_id">
+                         <property name="geometry">
+                          <rect>
+                           <x>130</x>
+                           <y>90</y>
+                           <width>142</width>
+                           <height>23</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                        <widget class="QLabel" name="label_5">
+                         <property name="geometry">
+                          <rect>
+                           <x>10</x>
+                           <y>100</y>
+                           <width>75</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>职位编号</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="lineEdit_employee_name">
+                         <property name="geometry">
+                          <rect>
+                           <x>130</x>
+                           <y>140</y>
+                           <width>142</width>
+                           <height>23</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                        <widget class="QLabel" name="label_6">
+                         <property name="geometry">
+                          <rect>
+                           <x>11</x>
+                           <y>137</y>
+                           <width>81</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>姓名</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="lineEdit_cart_id">
+                         <property name="geometry">
+                          <rect>
+                           <x>100</x>
+                           <y>190</y>
+                           <width>142</width>
+                           <height>23</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                        <widget class="QLabel" name="label_7">
+                         <property name="geometry">
+                          <rect>
+                           <x>10</x>
+                           <y>190</y>
+                           <width>60</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>车牌号码</string>
+                         </property>
+                        </widget>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="widget_7" native="true">
+                        <widget class="QLineEdit" name="lineEdit_sex">
+                         <property name="geometry">
+                          <rect>
+                           <x>119</x>
+                           <y>19</y>
+                           <width>142</width>
+                           <height>23</height>
+                          </rect>
+                         </property>
+                        </widget>
+                        <widget class="QLabel" name="label_12">
+                         <property name="geometry">
+                          <rect>
+                           <x>10</x>
+                           <y>20</y>
+                           <width>60</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>性别</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="lineEdit_phone">
+                         <property name="geometry">
+                          <rect>
+                           <x>119</x>
+                           <y>79</y>
+                           <width>142</width>
+                           <height>23</height>
+                          </rect>
+                         </property>
+                        </widget>
+                        <widget class="QLabel" name="label_13">
+                         <property name="geometry">
+                          <rect>
+                           <x>10</x>
+                           <y>80</y>
+                           <width>60</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>手机号码</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="lineEdit_email">
+                         <property name="geometry">
+                          <rect>
+                           <x>119</x>
+                           <y>119</y>
+                           <width>142</width>
+                           <height>23</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                        <widget class="QLabel" name="label_14">
+                         <property name="geometry">
+                          <rect>
+                           <x>10</x>
+                           <y>120</y>
+                           <width>60</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>邮箱</string>
+                         </property>
+                        </widget>
+                        <widget class="QPushButton" name="btn_submit">
+                         <property name="geometry">
+                          <rect>
+                           <x>290</x>
+                           <y>200</y>
+                           <width>89</width>
+                           <height>24</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>提交</string>
+                         </property>
+                        </widget>
+                        <widget class="QLineEdit" name="lineEdit_pswd">
+                         <property name="geometry">
+                          <rect>
+                           <x>119</x>
+                           <y>180</y>
+                           <width>142</width>
+                           <height>23</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>123456</string>
+                         </property>
+                        </widget>
+                        <widget class="QLabel" name="label_15">
+                         <property name="geometry">
+                          <rect>
+                           <x>10</x>
+                           <y>181</y>
+                           <width>60</width>
+                           <height>16</height>
+                          </rect>
+                         </property>
+                         <property name="text">
+                          <string>密码</string>
+                         </property>
+                        </widget>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_2"/>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
